@@ -76,7 +76,7 @@ h3 {
     padding: 1rem 0;
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    gap: 2rem; /* separación de enlaces forma nueva */
 }
 .navegacion__enlace {
     font-family: var(--fuentep1);
@@ -85,4 +85,18 @@ h3 {
 .navegacion__enlace--activo,
 .navegacion__enlace:hover {
     color: var(--amarillo);
+}
+
+/*productos*/
+.producto {
+
+}
+.producto__imagen {
+
+}
+.producto__nombre {
+
+}
+.producto__precio {
+    
 }
