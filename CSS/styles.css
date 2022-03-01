@@ -33,6 +33,7 @@ a {
 }
 img {
     max-width: 120%;
+    width: 100%;
 }
 .contenedor {
     max-width: 120rem;
@@ -92,6 +93,7 @@ h3 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem; /* colum and row */
+    margin: 1rem;
 }
 @media (min-width: 768px) {
     .grid {
@@ -102,9 +104,6 @@ h3 {
 .producto {
     background-color: var(--moradooscuro);
     padding: 1rem;
-}
-.producto__imagen {
-    width: 100%;
 }
 .producto__nombre {
     font-size: 4rem;
@@ -158,7 +157,6 @@ h3 {
 }
 .nosotros--imagen {
     grid-row: 1 / 2;
-    width: 100%;
 }
 @media (min-width: 768px) {
     .nosotros--imagen {
@@ -182,4 +180,43 @@ h3 {
 }
 .bloque__titulo {
     margin: 0%;
+}
+
+/* página producto */
+.camisa {
+    margin: 2rem;
+}
+@media (min-width: 768px) {
+    .camisa {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+}
+.formulario {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+.formulario__campo {
+    border: 1rem solid var(--moradooscuro);
+    background-color: transparent;
+    color: var(--blanco);
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1rem;
+    appearance: none;
+}
+.formulario__submit {
+    background-color: var(--amarillo);
+    border: none;
+    font-size: 2rem;
+    font-family: var(--fuentep1);
+    padding: 2rem;
+    transition: bacground-color 0.3s ease;   /*transisiones tambien se puedes hacer al font-size o pading */
+    grid-column: 1 / 3;
+}
+.formulario__submit:hover {
+    cursor: pointer;
+    background-color: var(--amarillooscuro);
 }
